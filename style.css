@@ -3,6 +3,7 @@
 :root {
 	--softgrey: #223445;
 	--darkgrey: #15202b;
+	--lightgrey: rgb(24, 54, 82);
 	--textprimary: #1d9bf0;
 	--textwhite: #fff;
 	--textsecondary: #8899a6;
@@ -37,6 +38,18 @@ body {
 }
 
 .title-span {
+	color: var(--textwhite);
+}
+
+.text-primary {
+	color: var(--textprimary);
+}
+
+.text-secondary {
+	color: var(--textsecondary);
+}
+
+.text-white {
 	color: var(--textwhite);
 }
 
@@ -106,7 +119,6 @@ body {
 }
 /* End Navbar */
 
-
 /* Hero header */
 .badge {
 	padding: 8px 16px 8px 12px;
@@ -144,3 +156,47 @@ body {
 	margin-top: 50px;
 }
 /* End Hero header */
+
+/* Services */
+.services h2 {
+	color: var(--textprimary);
+	font-size: 38px;
+	font-weight: var(--fwsemibold);
+}
+
+.services p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
+}
+
+.card-services {
+	width: 100%;
+	height: 320px;
+	background-color: var(--softgrey);
+	padding: 40px;
+}
+
+.card-services:hover {
+	background-color: var(--lightgrey);
+	transition: all 0.5s ease-in-out;
+}
+
+.icon-round {
+	width: 70px;
+	height: 70px;
+	background-color: var(--darkgrey);
+}
+
+.icon-img {
+	width: 52px;
+}
+
+.card-services p {
+	font-size: 16px;
+}
+
+.card-services h3 {
+	font-weight: var(--fwsemibold);
+}
+/* End Services */
