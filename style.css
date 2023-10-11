@@ -143,4 +143,48 @@ body {
 .mt-50 {
 	margin-top: 50px;
 }
-/* End Hero header */
+
+.footer {
+    background-color: var(--softgrey); /* Menggunakan warna softgrey dari variabel */
+    color: var(--textwhite); /* Menggunakan warna textwhite dari variabel */
+    padding: 50px 0;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--textsecondary); /* Menggunakan warna textsecondary dari variabel */
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: var(--textwhite); /* Menggunakan warna textwhite dari variabel */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a.icon-hover {
+    animation: bounce 0.3s ease infinite; /* Animasi saat dihover */
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Efek perbesaran pada 50% dari animasi */
+    }
+}
