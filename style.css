@@ -179,12 +179,3 @@ body {
     animation: bounce 0.3s ease infinite; /* Animasi saat dihover */
 }
 
-@keyframes bounce {
-    0%,
-    100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2); /* Efek perbesaran pada 50% dari animasi */
-    }
-}
