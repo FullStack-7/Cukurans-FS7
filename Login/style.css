@@ -105,3 +105,26 @@ body {
 	border: none;
 }
 /* End Navbar */
+
+/* Login */
+.big-header{
+	color: var(--textwhite);
+	margin-bottom: 1rem;
+}
+
+.padding{
+	padding: 0.7rem 2rem;
+	border-radius: 1rem;
+}
+
+.daftar{
+	color: var(--textwhite);
+	text-decoration: none;
+}
+
+#pemberitahuan {
+	color: var(--textwhite);
+	margin-bottom: 1rem;
+}
+
+/* end login */
