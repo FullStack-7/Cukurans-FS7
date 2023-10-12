@@ -106,7 +106,7 @@ body {
 }
 /* End Navbar */
 
-/* Login */
+/* register */
 .big-header{
 	color: var(--textwhite);
 	margin-bottom: 1rem;
@@ -132,6 +132,5 @@ body {
 	  display: none;
 	}
   }
-  
 
-/* end login */
+/* register */
