@@ -153,7 +153,7 @@ body {
 }
 
 .mt-50 {
-	margin-top: 50px;
+	margin-top: 60px;
 }
 /* End Hero header */
 
@@ -218,3 +218,48 @@ body {
 	border: none;
 }
 /* End Services */
+
+/* Product */
+.products h2 {
+	color: var(--textprimary);
+	font-size: 38px;
+	font-weight: var(--fwsemibold);
+}
+
+.products p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
+}
+
+.card {
+	max-width: 35em;
+	flex-direction: row;
+	border: none;
+	background-color: var(--softgrey);
+}
+
+.card img {
+	max-width: 35%;
+}
+
+.text-section h5 {
+	color: var(--textprimary);
+	font-weight: var(--fwsemibold);
+	font-size: 26px;
+}
+
+.text-section .card-text {
+	color: var(--textsecondary);
+	font-size: 16px;
+}
+
+.text-section p {
+	font-size: 20px;
+	font-weight: var(--fwmedium);
+}
+
+.text-section a {
+	width: 100%;
+}
+/* End Product */
