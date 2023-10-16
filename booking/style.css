@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--softgrey: #223445;
+	--darkgrey: #15202b;
+	--lightgrey: rgb(24, 54, 82);
+	--textprimary: #1d9bf0;
+	--textwhite: #fff;
+	--textsecondary: #8899a6;
+	--hovercolor: #0071bc;
+	--fwbold: 700;
+	--fwextrabold: 800;
+	--fwsemibold: 600;
+	--fwmedium: 500;
+	--fwregular: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	list-style: none;
+}
+
+body {
+	background-color: var(--darkgrey);
+}
+
+.navbar-brand {
+	color: var(--textprimary);
+	font-weight: var(--fwextrabold);
+	font-size: 28px;
+}
+
+.navbar-brand:hover {
+	color: var(--hovercolor);
+}
+
+.title-span {
+	color: var(--textwhite);
+}
+
+.text-primary {
+	color: var(--textprimary);
+}
+
+.text-secondary {
+	color: var(--textsecondary);
+}
+
+.text-white {
+	color: var(--textwhite);
+}
+
+.btn-primary {
+	padding: 12px 20px 12px 20px;
+	background-color: var(--textprimary);
+	color: var(--textwhite);
+	font-size: 16px;
+	font-weight: var(--fwsemibold);
+	border-radius: 50px;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: var(--hovercolor);
+	color: var(--textwhite) !important;
+}
+
+.btn-secondary {
+	padding: 12px 20px 12px 20px;
+	background-color: var(--textsecondary);
+	color: #101041;
+	font-size: 16px;
+	font-weight: var(--fwmedium);
+	border-radius: 50px;
+	border: none;
+}
+
+.btn-secondary:hover {
+	background-color: var(--hovercolor);
+	color: var(--textwhite) !important;
+}
+
+/* Navbar */
+.navbar-nav .nav-item a {
+	color: var(--textwhite);
+	transition: all 0.2s ease;
+	font-size: 18px;
+	font-weight: var(--fwsemibold);
+}
+
+.navbar-nav .nav-item a:hover {
+	color: var(--textprimary);
+	transition: all 0.2s ease;
+	font-weight: var(--fwsemibold);
+}
+
+.navbar-nav .nav-item {
+	padding-left: 30px;
+}
+
+.navbar {
+	--bs-navbar-padding-y: 0;
+}
+
+.quick-container {
+	padding: 24px;
+}
+
+.navbar-toggler-icon {
+	color: var(--textprimary) !important;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2829,155,240, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+	border: none;
+}
+/* End Navbar */
+
+
+/* Booking */
+.date{
+	color: var(--textwhite);
+}
+
+.form-control{
+	margin-bottom: 1rem;
+}
+
+.warna{
+	color: var(--darkgrey);
+}
+
+.bg{
+	background-color: var(--textwhite);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
