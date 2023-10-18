@@ -61,16 +61,17 @@
 						<div class="col-md-5 d-flex flex-column justify-content-center p-3 bg rounded">
 							<img src="/assets/hair-spies-lmZ_JVfbmY4-unsplash.jpg" alt="" class="img-fluid rounded" style="max-height: 20rem;">
 							<div class="col d-flex justify-content-between mt-2">
-								<h4>Joni Iskandar</h4>
-								<p>Rp.20.000</p>
+								<h4>Pamungkas</h4>
+								<h5>Rp. 30.000</h5>
 							</div>
 								<p>⭐⭐⭐⭐✰</p>
 								<p>Terimakasih Telah memilih <br>
 								 saya untuk menjadi barber anda</p>
 						</div>
 
-						<div class="col-md-6 col-lg-3">
+						<div class="col-md-6 col-lg-5">
 							<div class="border rounded p-4">
+								<h3 class="date">Form Booking</h3>
 								<div class="form-group">
 									<label for="date" class="date">Pilih Tanggal:</label>
 									<input type="date" class="form-control" id="date" name="date">
@@ -84,37 +85,52 @@
 								<div class="form-group">
 									<label for="pilihan" class="date">Pilih Layanan:</label>
 									<select id="pilihan" name="pilihan" class="form-control">
-										<option value="layanan1">Layanan 1</option>
-										<option value="layanan2">Layanan 2</option>
-										<option value="layanan3">Layanan 3</option>
 									</select>
 								</div>
-						
-								<a class="btn btn-primary" href="#" role="button" id="submit-btn">➤</a>
+								<div class="date" id="pemberitahuan"></div>
+								<a class="btn btn-primary px-5 rounded-4" href="#" role="button" id="submit-btn">➤</a>
 							</div>
 						</div>
 						
 					</div>
 				</div>
-			</section>
 				
-            
-            
-            
-            
+				<div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="dataModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-scrollable" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="dataModalLabel">Detail Data yang Dikirim</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Tanggal: <span id="modal-date"></span></p>
+								<p>Jam: <span id="modal-time"></span></p>
+								<p>Layanan: <span id="modal-layanan"></span></p>
+							</div>
+							<div class="modal-footer">
+								<a href="./Pembayaran/index.html"><button type="button" class="btn btn-primary" id="lanjut-btn">Lanjut</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>    
         </main>
 
+        <footer>
+			<span></span>
+        </footer>
 
-
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script
 		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
 		crossorigin="anonymous"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-		integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-		crossorigin="anonymous"></script>
-	<script src="script.js"></script>
-
-        <footer>
-        </footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+			integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+			crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</body>

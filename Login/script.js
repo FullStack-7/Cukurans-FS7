@@ -31,7 +31,7 @@ async function getData(email, password) {
         const pesan = document.getElementById('pemberitahuan')
 
         if (userFound){
-            console.log("Selamat datang");
+            window.location.href = '/index.html'
         } else {
             pesan.innerHTML = 'Email atau Password anda salah'
         }
