@@ -7,6 +7,7 @@
 	--textprimary: #1d9bf0;
 	--textwhite: #fff;
 	--textsecondary: #8899a6;
+	--bgsecondary: #142839;
 	--hovercolor: #0071bc;
 	--fwbold: 700;
 	--fwextrabold: 800;
@@ -264,3 +265,62 @@ body {
 	width: 100%;
 }
 /* End Product */
+
+/* Contact */
+.contact h3 {
+	color: var(--textprimary);
+	font-size: 34px;
+	font-weight: var(--fwsemibold);
+	line-height: 50px;
+}
+
+.contact-section h6 {
+	color: var(--textsecondary);
+	font-size: 26px;
+}
+
+.contact-section span {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwregular);
+	margin-top: 1rem;
+}
+
+.contact-section p {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwregular);
+}
+
+.contact {
+	padding: 148px 0 148px;
+}
+
+.card-contact {
+	width: 100%;
+	height: 380px;
+	background-color: var(--softgrey);
+	padding: 40px;
+}
+
+.card-contact h2 {
+	font-size: 34px;
+	font-weight: var(--fwsemibold);
+	color: var(--textprimary);
+	margin-bottom: 2rem;
+}
+
+.form-control {
+	background-color: var(--bgsecondary);
+	border: none;
+}
+
+.form-floating label {
+	color: var(--textsecondary);
+}
+
+#floatingInput {
+	background-color: var(--bgsecondary);
+	color: var(--textwhite);
+}
+/* End Contact */
