@@ -1,3 +1,4 @@
+// Api list services
 async function fetchData() {
 	try {
 		let response = await fetch(
@@ -50,3 +51,53 @@ async function showModalService(index) {
 	modalTitle.innerHTML = services[index].name;
 	modalContent.innerHTML = services[index].detailDescription;
 }
+
+// ========= Api list Products ========= //
+async function fetchDataProducts() {
+	try {
+		let response = await fetch(
+			`https://6526a485917d673fd76cb35c.mockapi.io/products`,
+		);
+
+		let result = await response.json();
+		return result;
+	} catch (error) {
+		console.log(error);
+	}
+}
+
+async function getDataProducts() {
+	try {
+		let products = await fetchDataProducts();
+		let listProducts = document.getElementById('list-products');
+
+		products.map((item, index) => {
+			let cardProducts = `
+			<div class="col-md-6 mb-4">
+				<div class="card rounded-4">
+					<img
+					src="${item.imgUrl}"
+					class="card-img-top rounded-4"
+					alt="..." />
+						<div class="card-body align-self-center">
+							<div class="text-section">
+								<h5 class="card-title">${item.title}</h5>
+								<p class="card-text">
+									${item.description}
+								</p>
+								<p>${item.price}</p>
+								<a href="#" class="btn btn-primary">Book now</a>
+							</div>
+						</div>
+				</div>
+			</div>
+			`;
+
+			listProducts.innerHTML += cardProducts;
+		});
+	} catch (error) {
+		console.log(error);
+	}
+}
+
+getDataProducts();

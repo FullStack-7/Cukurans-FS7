@@ -240,7 +240,8 @@ body {
 }
 
 .card img {
-	max-width: 35%;
+	max-width: 40%;
+	object-fit: cover;
 }
 
 .text-section h5 {
