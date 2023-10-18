@@ -86,7 +86,7 @@ async function getDataProducts() {
 									${item.description}
 								</p>
 								<p>${item.price}</p>
-								<a href="#" class="btn btn-primary">Book now</a>
+								<button onclick="showProductsById(${item.id})" class="btn btn-primary w-100">Book now</button>
 							</div>
 						</div>
 				</div>
@@ -101,3 +101,17 @@ async function getDataProducts() {
 }
 
 getDataProducts();
+
+// Membuat booking berdasarkan id
+async function showProductsById(id) {
+	try {
+		let productsById = await fetch(
+			`https://6526a485917d673fd76cb35c.mockapi.io/products/${id}`,
+		);
+		let result = await productsById.json();
+
+		window.location.href = `./booking/index.html?id=${result.id}&name=${result.title}&price=${result.price}&image=${result.imgUrl}`;
+	} catch (error) {
+		console.log(error);
+	}
+}
