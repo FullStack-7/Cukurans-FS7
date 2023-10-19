@@ -7,6 +7,7 @@
 	--textprimary: #1d9bf0;
 	--textwhite: #fff;
 	--textsecondary: #8899a6;
+	--bgsecondary: #142839;
 	--hovercolor: #0071bc;
 	--fwbold: 700;
 	--fwextrabold: 800;
@@ -119,21 +120,61 @@ body {
 }
 /* End Navbar */
 
-
 /* Booking */
-.date{
+.date {
 	color: var(--textwhite);
 }
 
-.form-control{
+.form-control {
 	margin-bottom: 1rem;
 }
 
-.warna{
-	color: var(--darkgrey);
+.warna {
+	color: var(--textwhite);
 }
 
-.bg{
-	background-color: var(--textwhite);
-	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+.card-booking {
+	width: 350px;
+	background-color: var(--softgrey);
+	padding: 20px;
+}
+
+.card-booking p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
+}
+
+.card-booking h4 {
+	color: var(--textwhite);
+	font-size: 24px;
+	font-weight: var(--fwsemibold);
+}
+
+.card-booking h5 {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwsemibold);
+}
+
+.booking-section h3 {
+	color: var(--textprimary);
+	font-size: 34px;
+	font-weight: var(--fwsemibold);
+}
+
+.form-group label {
+	color: var(--textwhite);
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.form-group .form-control {
+	border: none;
+	background-color: var(--softgrey);
+	color: var(--textwhite);
+}
+
+#date {
+	color: var(--textwhite);
 }
