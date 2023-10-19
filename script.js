@@ -115,3 +115,21 @@ async function showProductsById(id) {
 		console.log(error);
 	}
 }
+
+// Mengambil data user yang sedang login disimpan di webstorage
+const loggedInUser = localStorage.getItem('loggedInUser');
+
+if (loggedInUser) {
+	const user = JSON.parse(loggedInUser);
+	const loginButton = document.getElementById('btn-login');
+	const userElement = (document.getElementById('user-login').textContent =
+		user.Name);
+
+	// Sembunyikan tombol login
+	loginButton.style.display = 'none';
+
+	// Tampilkan elemen user
+	userElement.style.display = 'block';
+} else {
+	alert('Silakan login terlebih dahulu');
+}
