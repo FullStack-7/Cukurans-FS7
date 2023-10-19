@@ -32,16 +32,16 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Layanan</a>
+							<a class="nav-link" href="/">Layanan</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Cari Barber</a>
+							<a class="nav-link" href="/">Cari Barber</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Tentang</a>
+							<a class="nav-link" href="/">Tentang</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Kontak</a>
+							<a class="nav-link" href="/">Kontak</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav mb-2 mb-lg-0">
@@ -55,42 +55,77 @@
 		<!-- End Navbar -->
 
 		<!-- Login -->
-		<main>
-			<section>
-				<div class="container mt-5">
-					<div class="row">
-						<div class="col-md-6 d-flex align-items-center">
-							<img src="/assets/pngwing.com (10).png" alt="" class="img-fluid bg-transparent" width="480">
+		<section class="login">
+			<div
+				class="container d-flex justify-content-center align-items-center mt-5">
+				<div class="row rounded-4 p-4 login-card">
+					<div
+						class="col-md-6 left-box d-flex justify-content-center align-items-center flex-column rounded-4">
+						<div class="featured-img">
+							<img
+								src="/assets/pngwing.com (10).png"
+								alt=""
+								class="img-fluid bg-transparent"
+								style="width: 250px" />
 						</div>
-						<div class="col-md-6 d-flex flex-column justify-content-center">
-							<h1 class="big-header">Selamat datang</h1>
-							<form id="login-form" class="border rounded p-4">
+					</div>
+					<div class="col-md-6 right-box">
+						<div class="row align-items-center p-4">
+							<h1 class="mb-3">Silahkan Login</h1>
+							<form id="login-form">
 								<div class="mb-3">
-									<label for="email" class="form-label big-header">Alamat Email</label>
-									<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+									<label for="email" class="form-label big-header"
+										>Alamat Email</label
+									>
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										aria-describedby="emailHelp"
+										placeholder="Enter your email.." />
 								</div>
 								<div class="mb-3">
-									<label for="password" class="form-label big-header">Password</label>
-									<input type="password" class="form-control" id="password">
+									<label for="password" class="form-label">Password</label>
+									<input
+										type="password"
+										class="form-control"
+										id="password"
+										placeholder="Enter your password.." />
 								</div>
 								<div class="d-flex justify-content-between">
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-										<label class="form-check-label big-header" for="flexCheckIndeterminate">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="flexCheckIndeterminate" />
+										<label
+											class="form-check-label big-header"
+											for="flexCheckIndeterminate">
 											Ingat saya
 										</label>
 									</div>
-									<a href="/register/index.html" class="daftar">Daftar Akun</a>
+									<a
+										href="/register/index.html"
+										class="daftar text-decoration-none"
+										>Daftar Akun</a
+									>
 								</div>
 								<div id="pemberitahuan"></div>
-								<button type="submit" class="btn btn-primary padding" id="btnsend">Masuk</button>
+								<button
+									type="submit"
+									class="btn btn-primary w-100"
+									id="btnsend">
+									Masuk
+								</button>
 							</form>
 						</div>
-					</div>					
-				</div>			
-			</section>
-			<!-- end login -->
-		</main>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end login -->
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -101,3 +136,4 @@
 			crossorigin="anonymous"></script>
 		<script src="script.js"></script>
 	</body>
+</html>
