@@ -54,6 +54,18 @@ body {
 	color: var(--textwhite);
 }
 
+.nama-text {
+	color: var(--textprimary);
+	font-size: 22px;
+	font-weight: var(--fwextrabold);
+}
+
+.nama-text:hover {
+	color: var(--hovercolor);
+	font-size: 22px;
+	font-weight: var(--fwextrabold);
+}
+
 .btn-primary {
 	padding: 12px 20px 12px 20px;
 	background-color: var(--textprimary);
