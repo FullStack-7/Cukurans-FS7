@@ -56,8 +56,8 @@ document.getElementById('submit-btn').addEventListener('click', async () => {
 // penambahan layanan
 const selectElement = document.getElementById('pilihan');
 const options = [
-	{value: 'Cukur + Keramas = Rp.30.000', text: 'Cukur + Keramas = Rp.30.000'},
-	{value: 'Coloring = Rp.100.000', text: 'Coloring = Rp.100.000'},
+	{ value: 'Cukur + Keramas = Rp.30.000', text: 'Cukur + Keramas = Rp.30.000' },
+	{ value: 'Coloring = Rp.100.000', text: 'Coloring = Rp.100.000' },
 	{
 		value: 'Cukur + rubah wajah = Rp.1.000.000',
 		text: 'Cukur + rubah wajah = Rp.1.000.000',
@@ -95,3 +95,21 @@ const cardBooking = `
     `;
 
 resultElement.innerHTML += cardBooking;
+
+// Menampilkan user yang sedang login
+const loggedInUser = localStorage.getItem('loggedInUser');
+
+if (loggedInUser) {
+	const user = JSON.parse(loggedInUser);
+	const loginButton = document.getElementById('btn-login');
+	const userElement = (document.getElementById('user-login').textContent =
+		user.Name);
+
+	// Sembunyikan tombol login
+	loginButton.style.display = 'none';
+
+	// Tampilkan elemen user
+	userElement.style.display = 'block';
+} else {
+	alert('Silakan login terlebih dahulu');
+}
