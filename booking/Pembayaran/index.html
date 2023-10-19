@@ -32,16 +32,16 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Layanan</a>
+							<a class="nav-link" href="/">Layanan</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Cari Barber</a>
+							<a class="nav-link" href="/">Cari Barber</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Tentang</a>
+							<a class="nav-link" href="/">Tentang</a>
 						</li>
 						<li class="nav-item">   
-							<a class="nav-link" href="#">Kontak</a>
+							<a class="nav-link" href="/">Kontak</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav mb-2 mb-lg-0">
@@ -55,19 +55,19 @@
 		<!-- End Navbar -->
 
 		
-		<main>
-			<!-- Pembayaran -->
-			<section>
+		
+		<!-- Pembayaran -->
+		<section>
 				<div class="container quick-container">
 					<div class="row justify-content-between">
-						<div class="col-md-4 d-flex flex-column justify-content-center p-4 bg rounded">
-							<h3>Metode Pembayaran</h3>
+						<div class="col-md-6 d-flex flex-column justify-content-center p-4 card-checkout rounded-4">
+							<h3 class="mb-3">Metode Pembayaran</h3>
 							<p>Pilih metode pembayaran</p>
-							<div class="d-flex justify-content-between mt-2 mb-4">
-								<button class="border rounded-2 px-5 py-1 d-flex align-items-center custom" id="showForm1">
-									<img src="/assets/purse.png" alt="Gambar 1" class="img-fluid">
+							<div class="d-flex gap-4 mt-2 mb-4 text-center">
+								<button class="rounded-2 w-75" id="showForm1">
+									<img src="/assets/purse.png" alt="Gambar 1" class="img-fluid justify-content-center">
 								</button>
-								<button class="border rounded-2 px-5 py-1 d-flex align-items-center custom" id="showForm2">
+								<button class="rounded-2 w-75" id="showForm2">
 									<img src="/assets/bitcoin.png" alt="Gambar 2" class="img-fluid">
 								</button>
 							</div>
@@ -80,7 +80,7 @@
 									<label for="number" class="form-label big-header">Nomor Kartu</label>
 									<input type="number" class="form-control" id="nomor_kartu">
 								</div>
-								<div class="d-flex justify-content-center align-items-center">
+								<div class="d-flex gap-4 justify-content-center align-items-center">
 									<div class="mb-3 ml-3">
 										<label for="text" class="form-label big-header">Bulan</label>
 										<input type="text" class="form-control" id="bulan">
@@ -98,7 +98,7 @@
 
 							<form id="form2" class="hidden">
 								<div class="mb-3">
-									<label for="pilihan">Jenis E-Wallet</label>
+									<label for="pilihan" class="form-label">Jenis E-Wallet</label>
 									<select name="pilihan" id="pilihan" class="form-control">
 										<option value="Dana">Dana</option>
 										<option value="Ovo">Ovo</option>
@@ -112,9 +112,9 @@
 							</form>							
 						</div>
 						
-						<div class="col-md-6 col-lg-4">
-							<div class="border rounded p-4">
-								<h5 class="date">Detail Pembayaran</h5>
+						<div class="col-md-6">
+							<div class="rounded p-4 details">
+								<h5 class="mb-4">Detail Pembayaran</h5>
 								<div class="d-flex flex-column justify-content-between date">
 									<p>Date: <span id="display-date"></span></p>
 									<p>Time: <span id="display-time"></span></p>
@@ -122,13 +122,12 @@
 									<a class="btn btn-primary px-5 rounded-4 mt-4" href="#" role="button" id="submit-btn">Bayar</a>
 									<!-- Modal -->
 									<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
+										<div class="modal-dialog modal-dialog-centered">
 											<div class="modal-content">
 												<div class="modal-header">
-													<h5 class="modal-title" id="successModalLabel" style="color: #000;">Pembayaran Berhasil</h5>
-													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													<h5 class="modal-title" id="successModalLabel">Pembayaran Berhasil</h5>
 												</div>
-												<div class="modal-body" style="color: #000;">
+												<div class="modal-body mb-4">
 													Anda telah berhasil melakukan pembayaran.
 												</div>
 												<div class="modal-footer">
@@ -150,9 +149,9 @@
 						
 					</div>
 				</div>			
-			</section>
-			<!-- end pembayaran -->
-		</main>
+		</section>
+		<!-- end pembayaran -->
+		
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script

@@ -120,32 +120,86 @@ body {
 /* End Navbar */
 
 /* Pembayaran */
-.date{
+.card-checkout {
+	background-color: var(--softgrey);
+}
+
+.card-checkout h3 {
+	color: var(--textprimary);
+	font-size: 34px;
+	font-weight: var(--fwsemibold);
+}
+
+.card-checkout p {
 	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
 }
 
-.form-control{
-	margin-bottom: 1rem;
-}
-
-.warna{
-	color: var(--darkgrey);
-}
-
-.bg{
-	background-color: var(--textwhite);
-	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
-}
-
-.custom{
-	transition: box-shadow 0.3s;
-}
-
-.custom:hover{
-	box-shadow: 0 0 10px rgba(0, 0, 0, 100);
-}
-
-.hidden{
+.hidden {
 	display: none;
+}
+
+.card-checkout img {
+	max-width: 100%;
+	height: 100px;
+	padding: 20px 20px;
+}
+
+.card-checkout button {
+	background-color: var(--textwhite);
+	border: none;
+}
+
+.form-label {
+	color: var(--textwhite);
+	font-size: 12px;
+	font-weight: var(--fwregular);
+}
+
+.details h5 {
+	color: var(--textprimary);
+	font-size: 24px;
+	font-weight: var(--fwsemibold);
+}
+
+.details p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
+}
+
+.modal-title {
+	font-size: 32px;
+	font-weight: var(--fwsemibold);
+}
+
+.modal-content {
+	background-color: var(--softgrey);
+	padding: 1rem;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-header h5 {
+	color: var(--textprimary);
+	font-size: 38px;
+	font-weight: var(--fwsemibold);
+}
+
+.modal-body {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwregular);
+}
+
+.modal-footer {
+	border: none;
+}
+
+.modal-footer button {
+	color: var(--textwhite);
 }
 /* end pembayaran */

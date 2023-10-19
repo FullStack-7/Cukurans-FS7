@@ -175,6 +175,27 @@ body {
 	color: var(--textwhite);
 }
 
-#date {
+.modal-title {
+	font-size: 28px;
+	font-weight: var(--fwsemibold);
+	color: var(--textprimary);
+}
+
+.modal-content {
+	background-color: var(--softgrey);
+	padding: 1rem;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-footer {
+	border: none;
+}
+
+.modal-body p {
 	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
 }
