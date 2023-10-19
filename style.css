@@ -186,3 +186,67 @@ body {
     height: 40px; 
 }
 
+/* style.css */
+
+footer {
+    background-color: #1c2331;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Gaya untuk bagian tautan sosial */
+footer .social {
+    background-color: #6351ce;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .social span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+footer .social a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer .social a:hover {
+    color: #7c4dff;
+}
+
+/* Gaya untuk elemen "me-5" */
+footer .me-5 {
+    background-color: #7c4dff;
+    padding: 15px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    border-radius: 10px; /* Untuk sudut yang lebih bulat */
+}
+
+/* Gaya untuk bagian konten utama */
+footer .content {
+    padding: 20px 0;
+}
+
+footer .content h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c4dff;
+}
+
+footer .content hr {
+    width: 60px;
+    background-color: #7c4dff;
+    height: 2px;
+    border: none;
+}
+
+footer .content p {
+    margin: 10px 0;
+}
+
+
