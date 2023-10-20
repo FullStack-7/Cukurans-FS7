@@ -1,13 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cukurans</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cukurans</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <script src="script.js"></script>
-</body>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav navbar navbar-expand-lg">
+			<div class="container quick-container">
+				<a href="/" class="navbar-brand"
+					>Cuku<span class="title-span">Rans</span></a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Layanan</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#products">Cari Barber</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">Tentang</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Kontak</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="btn btn-primary" href="/Login/index.html" id="btn-login"
+								>Login</a
+							>
+							<span id="user-login" class="nama-text"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+
+		<!-- Hero Section -->
+		<section class="header mt-50">
+			<div class="container quick-container">
+				<div class="row">
+					<div class="col-md-6 align-self-center copy-writing">
+						<div class="badge mb-3">
+							<p class="small-copy">Gausah nunggu, langsung booking!</p>
+						</div>
+
+						<h1 class="big-header mb-3">
+							Mudahkan hidup Anda<br />
+							Dengan pangkas di barbershop kami.
+						</h1>
+						<p class="primary-copy mb-4">
+							Booking sekarang dan nikmati kemudahan serta kenyamanan
+						</p>
+
+						<a href="#" class="btn btn-primary mr-10 mb-5">Mulai Sekarang</a>
+					</div>
+
+					<div class="col-md-6 d-flex justify-content-end">
+						<img
+							src="assets/Barber.gif"
+							alt=""
+							srcset=""
+							class="img-fluid bg-transparent" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section class="services mt-50" id="services">
+			<div class="container quick-container">
+				<div class="row">
+					<div class="col-md-12 mb-5">
+						<h2 class="text-center">Layanan Kami</h2>
+						<p class="text-center mt-2">
+							Beberapa layanan yang ada di barber kami
+						</p>
+					</div>
+				</div>
+
+				<div class="row" id="list-services">
+					<!-- Card di render di js menggunakan mockAPI -->
+				</div>
+			</div>
+		</section>
+		<!-- End Services Section -->
+
+		<!-- Modal Services -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1
+							class="modal-title text-primary fw-bolder"
+							id="modal-title"></h1>
+					</div>
+					<div class="modal-body">
+						<div id="modal-content" class="text-white"></div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Modal Services -->
+
+		<!-- Product Section -->
+		<section class="products mt-50 overflow-hidden" id="products">
+			<div class="container quick-container">
+				<div class="row">
+					<div class="col-md-12 mb-5">
+						<h2 class="text-center">Cari Barber</h2>
+						<p class="text-center mt-2">
+							Beberapa kapster yang ada di barber kami
+						</p>
+					</div>
+				</div>
+
+				<div class="row" id="list-products"></div>
+				<div class="row" id="list-products"></div>
+			</div>
+		</section>
+		<!-- End Product Section -->
+
+		<!-- About Section -->
+		<section class="about" id="about">
+			<div class="container quick-container">
+				<div class="row">
+					<div class="col-md-12 mb-5" id="tentang">
+						<h2 class="text-center">Tentang Kami</h2>
+						<p class="text-center mt-2">
+							Kenali lebih lanjut tentang Cukurans.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 align-self-center">
+						<h3 class="mb-3">Mengapa Memilih Kami?</h3>
+						<p>
+							Cukurans adalah barbershop yang berkomitmen untuk memberikan
+							layanan terbaik kepada pelanggan kami. Dengan tim profesional dan
+							peralatan modern, kami siap untuk memenuhi semua kebutuhan
+							grooming dan penampilan terbaik Anda.
+						</p>
+						<p>
+							Kami juga memahami bahwa waktu adalah hal berharga, itulah mengapa
+							kami menawarkan kemudahan dalam pemesanan. Anda dapat mengatur
+							janji dengan mudah dan cepat, tanpa perlu menunggu lama.
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-end">
+						<img
+							src="assets/barbershop.gif"
+							alt=""
+							srcset=""
+							class="img-fluid bg-transparent" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Section -->
+
+		<!-- Contact Section -->
+		<section class="contact" id="contact">
+			<div class="container quick-container">
+				<div class="row">
+					<div class="col-md-6 mb-5 align-self-center">
+						<h3>
+							Ingin konsultasi? atau kritik & saran? hubungi kami. Kami siap
+							membantu
+						</h3>
+						<div class="contact-section">
+							<h6>Kontak</h6>
+							<span>08123456789</span>
+							<p>Jl. Kedondong Raya No.27</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card-contact rounded-4 align-self-center">
+							<form action="">
+								<h2>Ada Pertanyaan?</h2>
+								<div class="form-floating mb-3">
+									<input
+										type="email"
+										class="form-control"
+										id="floatingInput"
+										placeholder="Email" />
+									<label for="floatingInput">Email</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="text"
+										class="form-control"
+										id="floatingInput"
+										placeholder="Ketik disini.." />
+									<label for="floatingInput">Pesan anda</label>
+								</div>
+								<button type="submit" class="btn btn-primary w-100">
+									Kirim
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact Section -->
+
+		<!-- Footer -->
+		<div class="container my-5">
+			<footer class="text-center text-lg-start text-white rounded-4">
+				<section class="social">
+					<div class="me-5">
+						<span>Get connected with us on social networks:</span>
+					</div>
+					<div>
+						<a href="#" class="text-white me-4">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="text-white me-4">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="text-white me-4">
+							<i class="fab fa-google"></i>
+						</a>
+						<a href="#" class="text-white me-4">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="text-white me-4">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="#" class="text-white me-4">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</section>
+
+				<section class="content">
+					<div class="container text-center text-md-start mt-5">
+						<div class="row mt-3">
+							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+								<h6 class="text-uppercase fw-bold">Cukurans</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto" />
+								<p>
+									"Dengan tim profesional dan layanan berkualitas, kami hadir
+									untuk memenuhi kebutuhan grooming dan penampilan terbaik
+									Anda".
+								</p>
+							</div>
+							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+								<h6 class="text-uppercase fw-bold">Layanan Kami</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto" />
+								<p>
+									<a href="#!" class="text-white text-decoration-none"
+										>Potong rambut</a
+									>
+								</p>
+								<p>
+									<a href="#!" class="text-white text-decoration-none"
+										>Keramas</a
+									>
+								</p>
+								<p>
+									<a href="#!" class="text-white text-decoration-none"
+										>Hair Coloring</a
+									>
+								</p>
+							</div>
+							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+								<h6 class="text-uppercase fw-bold">Contact</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto" />
+								<p><i class="fas fa-home mr-3"></i> Jakarta Selatan, Cipete</p>
+								<p><i class="fas fa-envelope mr-3"></i> cukurans@gmail.com</p>
+								<p><i class="fas fa-phone mr-3"></i> +62 81264681534</p>
+								<p><i class="fas fa-print mr-3"></i> +62 81264681537</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+		<!-- End Footer -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+			integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+			crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</body>
 </html>
