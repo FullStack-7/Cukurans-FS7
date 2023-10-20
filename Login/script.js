@@ -36,7 +36,7 @@ async function getData(email, password) {
 
 		if (userFound) {
 			localStorage.setItem('loggedInUser', JSON.stringify(userFound));
-			window.location.href = './index.html';
+			window.location.href = '../index.html';
 		} else {
 			pesan.innerHTML = 'Email atau Password anda salah';
 		}
