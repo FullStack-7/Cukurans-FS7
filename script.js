@@ -1,15 +1,14 @@
-// Fungsi untuk mengatur animasi berkedip
 function animateBlink() {
-    const icons = document.querySelectorAll(".icon");
-    icons.forEach((icon, index) => {
-        setTimeout(() => {
-            icon.classList.add("blink");
-        }, index * 500);
-    });
+	const icons = document.querySelectorAll('.icon');
+	icons.forEach((icon, index) => {
+		setTimeout(() => {
+			icon.classList.add('blink');
+		}, index * 500);
+	});
 }
 
 // Panggil fungsi animasi berkedip setelah halaman dimuat
-window.addEventListener("load", animateBlink);
+window.addEventListener('load', animateBlink());
 
 // Api list services
 async function fetchData() {
@@ -129,7 +128,7 @@ async function showProductsById(id) {
 	}
 }
 
-// Mengambil data user yang sedang login disimpan di webstorage
+// Menampilkan user yang sedang login
 const loggedInUser = localStorage.getItem('loggedInUser');
 
 if (loggedInUser) {
