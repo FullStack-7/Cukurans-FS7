@@ -402,25 +402,25 @@ footer .content p {
 
 /* CSS for About Section */
 .about {
-    background-color: #f8f8f8;
+    background-color: #15202b; /* Ganti latar belakang dengan warna yang diminta */
     padding: 80px 0;
 }
 
 .about h2 {
-    font-size: 32px;
+	font-size: 32px;
     font-weight: bold;
-    color: #333;
+    color: #1d9bf0; 
 }
 
 .about p {
-    font-size: 18px;
-    color: #666;
+	font-size: 18px;
+    color: white; /* Ganti warna teks dengan biru */
 }
 
 .about h3 {
-    font-size: 24px;
+	font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #1d9bf0; /* Ganti warna teks dengan biru */
     margin-bottom: 20px;
 }
 
@@ -477,30 +477,6 @@ footer .content p {
 
 .about .mt-5 {
     margin-top: 5rem;
-}
-
-/* CSS for About Section */
-.about {
-    background-color: #15202b; /* Ganti latar belakang dengan warna yang diminta */
-    padding: 80px 0;
-}
-
-.about h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #1d9bf0; /* Ganti warna teks dengan biru */
-}
-
-.about p {
-    font-size: 18px;
-    color: white; /* Ganti warna teks dengan biru */
-}
-
-.about h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1d9bf0; /* Ganti warna teks dengan biru */
-    margin-bottom: 20px;
 }
 
 
