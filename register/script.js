@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (api.ok) {
                     const apiData = await api.json();
                     console.log(apiData);
-                    window.location.href = './Login/index.html'
+                    window.location.href = '../Login/index.html'
                 } else {
                     throw new Error('Error');
                 }
