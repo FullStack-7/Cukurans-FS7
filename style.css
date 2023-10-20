@@ -304,6 +304,50 @@ body {
 	font-weight: var(--fwregular);
 }
 
+.footer {
+    background-color: var(--softgrey); /* Menggunakan warna softgrey dari variabel */
+    color: var(--textwhite); /* Menggunakan warna textwhite dari variabel */
+    padding: 50px 0;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--textsecondary); /* Menggunakan warna textsecondary dari variabel */
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: var(--textwhite); /* Menggunakan warna textwhite dari variabel */
+    font-size: 24px;
+    text-decoration: none;
+	
+}
+
+.social-icons a.icon-hover {
+    animation: bounce 0.3s ease infinite;
+	
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px; 
+}
+
+/* style.css */
+=======
 .contact {
 	padding: 148px 0 148px;
 }
@@ -336,7 +380,6 @@ body {
 	color: var(--textwhite);
 }
 
-
 footer {
     background-color: #1c2331;
     color: white;
@@ -346,6 +389,7 @@ footer {
 
 /* Gaya untuk bagian tautan sosial */
 footer .social {
+    background-color: #6351ce;
     background-color: #283444;
     display: flex;
     justify-content: space-between;
@@ -366,11 +410,13 @@ footer .social a {
 }
 
 footer .social a:hover {
+    color: #7c4dff;
     color: #2596be;
 }
 
 /* Gaya untuk elemen "me-5" */
 footer .me-5 {
+    background-color: #7c4dff;
     background-color: #1d9bf0;
     padding: 15px; /* Sesuaikan dengan ukuran yang Anda inginkan */
     border-radius: 10px; /* Untuk sudut yang lebih bulat */
@@ -384,11 +430,13 @@ footer .content {
 footer .content h6 {
     font-weight: bold;
     text-transform: uppercase;
+    color: #7c4dff;
     color: #1d9bf0;
 }
 
 footer .content hr {
     width: 60px;
+    background-color: #7c4dff;
     background-color: #1d9bf0;
     height: 2px;
     border: none;
@@ -397,6 +445,7 @@ footer .content hr {
 footer .content p {
     margin: 10px 0;
 }
+
 
 /* End Contact */
 
@@ -478,6 +527,4 @@ footer .content p {
 .about .mt-5 {
     margin-top: 5rem;
 }
-
-
 
