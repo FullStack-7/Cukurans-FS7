@@ -45,87 +45,86 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="btn btn-primary" href="#">Login</a>
-						</li>
+						<a class="btn btn-primary" href="/Login/index.html" id="btn-login"
+							>Login</a
+						>
+						<span id="user-login" class="nama-text"></span>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- End Navbar -->
 
-		<!-- Login -->
-		<section class="login">
-			<div
-				class="container d-flex justify-content-center align-items-center mt-5">
-				<div class="row rounded-4 p-4 login-card">
-					<div
-						class="col-md-6 left-box d-flex justify-content-center align-items-center flex-column rounded-4">
-						<div class="featured-img">
-							<img
-								src="/assets/pngwing.com (10).png"
-								alt=""
-								class="img-fluid bg-transparent"
-								style="width: 250px" />
+		<section class="container-booking">
+			<div class="container quick-container">
+				<div class="row">
+					<div class="col-md-5 mb-5">
+						<div class="card-booking rounded-4 mx-auto" id="booking"></div>
+					</div>
+
+					<div class="col-md-7">
+						<div class="p-4 mx-auto booking-section align-self-center">
+							<h3 class="mb-4">Form Booking</h3>
+							<div class="form-group">
+								<label for="date">Pilih Tanggal:</label>
+								<input type="date" class="form-control" id="date" name="date" />
+							</div>
+
+							<div class="form-group">
+								<label for="time">Pilih Jam:</label>
+								<input type="time" class="form-control" id="time" name="time" />
+							</div>
+
+							<div class="form-group">
+								<label for="pilihan">Pilih Layanan:</label>
+								<select
+									id="pilihan"
+									name="pilihan"
+									class="form-control"></select>
+							</div>
+							<div class="date" id="pemberitahuan"></div>
+							<a
+								class="btn btn-primary px-5 rounded-4 mt-2"
+								href="#"
+								role="button"
+								id="submit-btn"
+								>Pesan Sekarang</a
+							>
 						</div>
 					</div>
-					<div class="col-md-6 right-box">
-						<div class="row align-items-center p-4">
-							<h1 class="mb-3">Silahkan Login</h1>
-							<form id="login-form">
-								<div class="mb-3">
-									<label for="email" class="form-label big-header"
-										>Alamat Email</label
-									>
-									<input
-										type="email"
-										class="form-control"
-										id="email"
-										aria-describedby="emailHelp"
-										placeholder="Enter your email.." />
-								</div>
-								<div class="mb-3">
-									<label for="password" class="form-label">Password</label>
-									<input
-										type="password"
-										class="form-control"
-										id="password"
-										placeholder="Enter your password.." />
-								</div>
-								<div class="d-flex justify-content-between">
-									<div class="form-check">
-										<input
-											class="form-check-input"
-											type="checkbox"
-											value=""
-											id="flexCheckIndeterminate" />
-										<label
-											class="form-check-label big-header"
-											for="flexCheckIndeterminate">
-											Ingat saya
-										</label>
-									</div>
-									<a
-										href="/register/index.html"
-										class="daftar text-decoration-none"
-										>Daftar Akun</a
-									>
-								</div>
-								<div id="pemberitahuan"></div>
-								<button
-									type="submit"
-									class="btn btn-primary w-100"
-									id="btnsend">
-									Masuk
-								</button>
-							</form>
+				</div>
+			</div>
+
+			<div
+				class="modal fade"
+				id="dataModal"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="dataModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-scrollable" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="dataModalLabel">Detail Pesanan</h5>
+						</div>
+						<div class="modal-body">
+							<p>Tanggal: <span id="modal-date"></span></p>
+							<p>Jam: <span id="modal-time"></span></p>
+							<p>Layanan: <span id="modal-layanan"></span></p>
+						</div>
+						<div class="modal-footer">
+							<a href="./Pembayaran/index.html"
+								><button type="button" class="btn btn-primary" id="lanjut-btn">
+									Lanjut
+								</button></a
+							>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- end login -->
 
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

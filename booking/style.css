@@ -3,6 +3,7 @@
 :root {
 	--softgrey: #223445;
 	--darkgrey: #15202b;
+	--lightgrey: rgb(24, 54, 82);
 	--textprimary: #1d9bf0;
 	--textwhite: #fff;
 	--textsecondary: #8899a6;
@@ -39,6 +40,30 @@ body {
 
 .title-span {
 	color: var(--textwhite);
+}
+
+.text-primary {
+	color: var(--textprimary);
+}
+
+.text-secondary {
+	color: var(--textsecondary);
+}
+
+.text-white {
+	color: var(--textwhite);
+}
+
+.nama-text {
+	color: var(--textprimary);
+	font-size: 22px;
+	font-weight: var(--fwextrabold);
+}
+
+.nama-text:hover {
+	color: var(--hovercolor);
+	font-size: 22px;
+	font-weight: var(--fwextrabold);
 }
 
 .btn-primary {
@@ -107,61 +132,82 @@ body {
 }
 /* End Navbar */
 
-/* Login */
-.login-card {
-	width: 100%;
-	height: 100%;
+/* Booking */
+.date {
+	color: var(--textwhite);
+}
+
+.form-control {
+	margin-bottom: 1rem;
+}
+
+.warna {
+	color: var(--textwhite);
+}
+
+.card-booking {
+	width: 350px;
 	background-color: var(--softgrey);
+	padding: 20px;
 }
 
-.left-box {
-	background-color: var(--bgsecondary);
+.card-booking p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
 }
 
-.right-box h1 {
+.card-booking h4 {
+	color: var(--textwhite);
+	font-size: 24px;
+	font-weight: var(--fwsemibold);
+}
+
+.card-booking h5 {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwsemibold);
+}
+
+.booking-section h3 {
 	color: var(--textprimary);
 	font-size: 34px;
 	font-weight: var(--fwsemibold);
 }
 
-.right-box label {
-	color: var(--textwhite);
-	font-size: 14px;
-}
-
-.daftar {
+.form-group label {
 	color: var(--textwhite);
 	font-size: 1rem;
+	margin-bottom: 5px;
 }
 
-.daftar:hover {
+.form-group .form-control {
+	border: none;
+	background-color: var(--softgrey);
+	color: var(--textwhite);
+}
+
+.modal-title {
+	font-size: 28px;
+	font-weight: var(--fwsemibold);
 	color: var(--textprimary);
-	transition: 0.5s ease-in-out;
-	font-size: 1rem;
 }
 
-.right-box input {
-	background-color: var(--bgsecondary);
+.modal-content {
+	background-color: var(--softgrey);
+	padding: 1rem;
+}
+
+.modal-header {
 	border: none;
 }
 
-.form-control {
-	background-color: var(--bgsecondary);
+.modal-footer {
 	border: none;
 }
 
-#pemberitahuan {
+.modal-body p {
 	color: var(--textwhite);
-	margin-bottom: 1rem;
+	font-size: 18px;
+	font-weight: var(--fwregular);
 }
-
-#email {
-	background-color: var(--bgsecondary);
-	color: var(--textwhite);
-}
-
-#password {
-	background-color: var(--bgsecondary);
-	color: var(--textwhite);
-}
-/* end login */

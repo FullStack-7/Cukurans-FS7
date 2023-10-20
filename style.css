@@ -3,9 +3,11 @@
 :root {
 	--softgrey: #223445;
 	--darkgrey: #15202b;
+	--lightgrey: rgb(24, 54, 82);
 	--textprimary: #1d9bf0;
 	--textwhite: #fff;
 	--textsecondary: #8899a6;
+	--bgsecondary: #142839;
 	--hovercolor: #0071bc;
 	--fwbold: 700;
 	--fwextrabold: 800;
@@ -38,6 +40,30 @@ body {
 
 .title-span {
 	color: var(--textwhite);
+}
+
+.text-primary {
+	color: var(--textprimary);
+}
+
+.text-secondary {
+	color: var(--textsecondary);
+}
+
+.text-white {
+	color: var(--textwhite);
+}
+
+.nama-text {
+	color: var(--textprimary);
+	font-size: 22px;
+	font-weight: var(--fwextrabold);
+}
+
+.nama-text:hover {
+	color: var(--hovercolor);
+	font-size: 22px;
+	font-weight: var(--fwextrabold);
 }
 
 .btn-primary {
@@ -106,7 +132,6 @@ body {
 }
 /* End Navbar */
 
-
 /* Hero header */
 .badge {
 	padding: 8px 16px 8px 12px;
@@ -141,7 +166,142 @@ body {
 }
 
 .mt-50 {
-	margin-top: 50px;
+	margin-top: 60px;
+}
+/* End Hero header */
+
+/* Services */
+.services h2 {
+	color: var(--textprimary);
+	font-size: 38px;
+	font-weight: var(--fwsemibold);
+}
+
+.services p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
+}
+
+.card-services {
+	width: 100%;
+	height: 320px;
+	background-color: var(--softgrey);
+	padding: 40px;
+}
+
+.card-services:hover {
+	background-color: var(--lightgrey);
+	transition: all 0.5s ease-in-out;
+}
+
+.icon-round {
+	width: 70px;
+	height: 70px;
+	background-color: var(--darkgrey);
+}
+
+.icon-img {
+	width: 52px;
+}
+
+.card-services p {
+	font-size: 16px;
+}
+
+.card-services h3 {
+	font-weight: var(--fwsemibold);
+}
+
+.modal-title {
+	font-size: 32px;
+	font-weight: var(--fwsemibold);
+}
+
+.modal-content {
+	background-color: var(--softgrey);
+	padding: 1rem;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-footer {
+	border: none;
+}
+/* End Services */
+
+/* Product */
+.products h2 {
+	color: var(--textprimary);
+	font-size: 38px;
+	font-weight: var(--fwsemibold);
+}
+
+.products p {
+	color: var(--textwhite);
+	font-size: 18px;
+	font-weight: var(--fwregular);
+}
+
+.card {
+	max-width: 35em;
+	flex-direction: row;
+	border: none;
+	background-color: var(--softgrey);
+}
+
+.card img {
+	max-width: 40%;
+	object-fit: cover;
+}
+
+.text-section h5 {
+	color: var(--textprimary);
+	font-weight: var(--fwsemibold);
+	font-size: 26px;
+}
+
+.text-section .card-text {
+	color: var(--textsecondary);
+	font-size: 16px;
+}
+
+.text-section p {
+	font-size: 20px;
+	font-weight: var(--fwmedium);
+}
+
+.text-section a {
+	width: 100%;
+}
+/* End Product */
+
+/* Contact */
+.contact h3 {
+	color: var(--textprimary);
+	font-size: 34px;
+	font-weight: var(--fwsemibold);
+	line-height: 50px;
+}
+
+.contact-section h6 {
+	color: var(--textsecondary);
+	font-size: 26px;
+}
+
+.contact-section span {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwregular);
+	margin-top: 1rem;
+}
+
+.contact-section p {
+	color: var(--textwhite);
+	font-size: 20px;
+	font-weight: var(--fwregular);
 }
 
 .footer {
@@ -187,6 +347,38 @@ body {
 }
 
 /* style.css */
+=======
+.contact {
+	padding: 148px 0 148px;
+}
+
+.card-contact {
+	width: 100%;
+	height: 380px;
+	background-color: var(--softgrey);
+	padding: 40px;
+}
+
+.card-contact h2 {
+	font-size: 34px;
+	font-weight: var(--fwsemibold);
+	color: var(--textprimary);
+	margin-bottom: 2rem;
+}
+
+.form-control {
+	background-color: var(--bgsecondary);
+	border: none;
+}
+
+.form-floating label {
+	color: var(--textsecondary);
+}
+
+#floatingInput {
+	background-color: var(--bgsecondary);
+	color: var(--textwhite);
+}
 
 footer {
     background-color: #1c2331;
@@ -198,6 +390,7 @@ footer {
 /* Gaya untuk bagian tautan sosial */
 footer .social {
     background-color: #6351ce;
+    background-color: #283444;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,11 +411,13 @@ footer .social a {
 
 footer .social a:hover {
     color: #7c4dff;
+    color: #2596be;
 }
 
 /* Gaya untuk elemen "me-5" */
 footer .me-5 {
     background-color: #7c4dff;
+    background-color: #1d9bf0;
     padding: 15px; /* Sesuaikan dengan ukuran yang Anda inginkan */
     border-radius: 10px; /* Untuk sudut yang lebih bulat */
 }
@@ -236,11 +431,13 @@ footer .content h6 {
     font-weight: bold;
     text-transform: uppercase;
     color: #7c4dff;
+    color: #1d9bf0;
 }
 
 footer .content hr {
     width: 60px;
     background-color: #7c4dff;
+    background-color: #1d9bf0;
     height: 2px;
     border: none;
 }
@@ -249,4 +446,85 @@ footer .content p {
     margin: 10px 0;
 }
 
+
+/* End Contact */
+
+/* CSS for About Section */
+.about {
+    background-color: #15202b; /* Ganti latar belakang dengan warna yang diminta */
+    padding: 80px 0;
+}
+
+.about h2 {
+	font-size: 32px;
+    font-weight: bold;
+    color: #1d9bf0; 
+}
+
+.about p {
+	font-size: 18px;
+    color: white; /* Ganti warna teks dengan biru */
+}
+
+.about h3 {
+	font-size: 24px;
+    font-weight: bold;
+    color: #1d9bf0; /* Ganti warna teks dengan biru */
+    margin-bottom: 20px;
+}
+
+/* Adjust the image styling */
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Custom styling for buttons */
+.about .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add some margin for better spacing */
+.about .mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.about .mb-4 {
+    margin-bottom: 2rem;
+}
+
+.about .mb-5 {
+    margin-bottom: 2.5rem;
+}
+
+/* Center content in the section */
+.about .align-self-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Add margin to the top of the section */
+.about .mt-2 {
+    margin-top: 2rem;
+}
+
+.about .mt-3 {
+    margin-top: 3rem;
+}
+
+.about .mt-5 {
+    margin-top: 5rem;
+}
 

@@ -46,7 +46,7 @@
 					</ul>
 					<ul class="navbar-nav mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="btn btn-primary" href="#">Login</a>
+							<a class="btn btn-primary" href="/Login/index.html">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -54,11 +54,11 @@
 		</nav>
 		<!-- End Navbar -->
 
-		<!-- Login -->
-		<section class="login">
+		<!-- Register -->
+		<section class="register">
 			<div
-				class="container d-flex justify-content-center align-items-center mt-5">
-				<div class="row rounded-4 p-4 login-card">
+				class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+				<div class="row rounded-4 p-4 register-card">
 					<div
 						class="col-md-6 left-box d-flex justify-content-center align-items-center flex-column rounded-4">
 						<div class="featured-img">
@@ -71,52 +71,53 @@
 					</div>
 					<div class="col-md-6 right-box">
 						<div class="row align-items-center p-4">
-							<h1 class="mb-3">Silahkan Login</h1>
-							<form id="login-form">
+							<h1>Pendaftaran Akun</h1>
+							<form id="login-form" class="rounded p-4">
 								<div class="mb-3">
-									<label for="email" class="form-label big-header"
-										>Alamat Email</label
+									<label for="text" class="form-label big-header">Nama</label>
+									<input
+										type="text"
+										class="form-control form-control-sm"
+										placeholder="Enter your name.."
+										id="text" />
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label big-header"
+										>Email address</label
 									>
 									<input
 										type="email"
-										class="form-control"
+										class="form-control form-control-sm"
 										id="email"
-										aria-describedby="emailHelp"
-										placeholder="Enter your email.." />
+										placeholder="Enter your email.."
+										aria-describedby="emailHelp" />
 								</div>
 								<div class="mb-3">
-									<label for="password" class="form-label">Password</label>
+									<label for="password" class="form-label big-header"
+										>Password</label
+									>
 									<input
 										type="password"
-										class="form-control"
-										id="password"
-										placeholder="Enter your password.." />
+										class="form-control form-control-sm"
+										placeholder="Enter your password.."
+										id="password" />
 								</div>
-								<div class="d-flex justify-content-between">
-									<div class="form-check">
-										<input
-											class="form-check-input"
-											type="checkbox"
-											value=""
-											id="flexCheckIndeterminate" />
-										<label
-											class="form-check-label big-header"
-											for="flexCheckIndeterminate">
-											Ingat saya
-										</label>
-									</div>
-									<a
-										href="/register/index.html"
-										class="daftar text-decoration-none"
-										>Daftar Akun</a
+								<div class="mb-3">
+									<label for="password" class="form-label big-header"
+										>Repassword</label
 									>
+									<input
+										type="password"
+										class="form-control form-control-sm"
+										placeholder="Enter your password again.."
+										id="repas" />
 								</div>
 								<div id="pemberitahuan"></div>
 								<button
 									type="submit"
-									class="btn btn-primary w-100"
+									class="btn btn-primary w-100 form-control-sm"
 									id="btnsend">
-									Masuk
+									Daftar
 								</button>
 							</form>
 						</div>
@@ -124,7 +125,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- end login -->
+		<!-- Register -->
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
