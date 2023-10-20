@@ -304,6 +304,50 @@ body {
 	font-weight: var(--fwregular);
 }
 
+.footer {
+    background-color: var(--softgrey); /* Menggunakan warna softgrey dari variabel */
+    color: var(--textwhite); /* Menggunakan warna textwhite dari variabel */
+    padding: 50px 0;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--textsecondary); /* Menggunakan warna textsecondary dari variabel */
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: var(--textwhite); /* Menggunakan warna textwhite dari variabel */
+    font-size: 24px;
+    text-decoration: none;
+	
+}
+
+.social-icons a.icon-hover {
+    animation: bounce 0.3s ease infinite;
+	
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px; 
+}
+
+/* style.css */
+=======
 .contact {
 	padding: 148px 0 148px;
 }
@@ -335,4 +379,152 @@ body {
 	background-color: var(--bgsecondary);
 	color: var(--textwhite);
 }
+
+footer {
+    background-color: #1c2331;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Gaya untuk bagian tautan sosial */
+footer .social {
+    background-color: #6351ce;
+    background-color: #283444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .social span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+footer .social a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer .social a:hover {
+    color: #7c4dff;
+    color: #2596be;
+}
+
+/* Gaya untuk elemen "me-5" */
+footer .me-5 {
+    background-color: #7c4dff;
+    background-color: #1d9bf0;
+    padding: 15px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    border-radius: 10px; /* Untuk sudut yang lebih bulat */
+}
+
+/* Gaya untuk bagian konten utama */
+footer .content {
+    padding: 20px 0;
+}
+
+footer .content h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c4dff;
+    color: #1d9bf0;
+}
+
+footer .content hr {
+    width: 60px;
+    background-color: #7c4dff;
+    background-color: #1d9bf0;
+    height: 2px;
+    border: none;
+}
+
+footer .content p {
+    margin: 10px 0;
+}
+
+
 /* End Contact */
+
+/* CSS for About Section */
+.about {
+    background-color: #15202b; /* Ganti latar belakang dengan warna yang diminta */
+    padding: 80px 0;
+}
+
+.about h2 {
+	font-size: 32px;
+    font-weight: bold;
+    color: #1d9bf0; 
+}
+
+.about p {
+	font-size: 18px;
+    color: white; /* Ganti warna teks dengan biru */
+}
+
+.about h3 {
+	font-size: 24px;
+    font-weight: bold;
+    color: #1d9bf0; /* Ganti warna teks dengan biru */
+    margin-bottom: 20px;
+}
+
+/* Adjust the image styling */
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Custom styling for buttons */
+.about .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add some margin for better spacing */
+.about .mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.about .mb-4 {
+    margin-bottom: 2rem;
+}
+
+.about .mb-5 {
+    margin-bottom: 2.5rem;
+}
+
+/* Center content in the section */
+.about .align-self-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Add margin to the top of the section */
+.about .mt-2 {
+    margin-top: 2rem;
+}
+
+.about .mt-3 {
+    margin-top: 3rem;
+}
+
+.about .mt-5 {
+    margin-top: 5rem;
+}
+
